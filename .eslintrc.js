@@ -28,6 +28,7 @@ module.exports = {
             "error",
             "always"
         ],
-        "no-undef": 0
+        "no-undef": 0,
+        "no-console": 0
     }
 };
