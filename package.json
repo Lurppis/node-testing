@@ -1,0 +1,23 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "This is place where I can store all simple ways to test code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lurppis/node-testing.git"
+  },
+  "author": "Marcin Pilarczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lurppis/node-testing/issues"
+  },
+  "homepage": "https://github.com/Lurppis/node-testing#readme",
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1",
+    "jest": "^22.1.4"
+  }
+}
