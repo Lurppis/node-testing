@@ -6,6 +6,7 @@
 - [Code samples](#code-samples)
 - [Instalation](#installation)
 - [Testing](#test)
+- [Build with](#build-with)
 
 
 ## Introduction
@@ -64,20 +65,19 @@ app.get('/users', (req, res) => {
 ``` JavaScript
 describe('GET /users', () => {
   it('should return my user object', (done) => {
-		request(app)
-			.get('/users')
-			.expect(200)
-			.expect((res) => {
-				expect(res.body).toInclude({
-					name: 'Andrew',
-					age: 25
-				});
-			})
-			.end(done);
+	request(app)
+		.get('/users')
+		.expect(200)
+		.expect((res) => {
+			expect(res.body).toInclude({
+				name: 'Andrew',
+				age: 25
+			});
+		})
+		.end(done);
 	});
 });
 ```
-
 
 ## Installation
 
@@ -96,3 +96,10 @@ npm install
 ```
 npm test
 ```
+
+## Built With
+* [Express](https://expressjs.com/) -Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+* [Expect](https://github.com/mjackson/expect) - Is used to build tests.
+* [Supertest](https://github.com/visionmedia/supertest) - Provide a high-level abstraction for testing HTTP.
+* [Mocha](https://mochajs.org/) - Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
+* [Rewire](https://github.com/jhnns/rewire) - Rewire adds a special setter and getter to modules so you can modify their behaviour for better unit testing.
